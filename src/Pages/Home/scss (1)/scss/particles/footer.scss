@@ -1,0 +1,63 @@
+.footer {
+  &__section {
+    padding: 50px 0 0 0;
+    background-color: $pure-black;
+  }
+
+  &__grid {
+    @include grid-col-three;
+    align-items: flex-start;
+  }
+
+  &__block {
+    h3 {
+      font-size: 14px;
+      color: $pure-white;
+      margin: 0 0 10px 0;
+      font-weight: $font-weight-medium;
+      letter-spacing: 1px;
+    }
+
+    p, a {
+      font-size: 12px;
+      color: $pure-white;
+      margin: 0 0 10px 0;
+      font-weight: $font-weight-regular;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__touch {
+    column-count: 2;
+
+    li {
+      a {
+        display: grid;
+        grid-template-columns: 15px 1fr;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  }
+
+  &__strip {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 40px 0 0 0;
+
+    p {
+      font-size: 12px;
+      color: $pure-white;
+      margin: 0;
+      font-weight: $font-weight-regular;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+  }
+}

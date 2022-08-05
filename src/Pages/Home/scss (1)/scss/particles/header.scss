@@ -1,0 +1,120 @@
+.header {
+  &__section {
+    position: fixed;
+    z-index: 11;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: all 0.6s ease 0s;
+  }
+
+  &__fixed {
+    background-color: $pure-white;
+    box-shadow: 0px 0px 9px 0px rgb(0 0 0 / 10%);
+
+    .header__navbar--right {
+      li {
+        a {
+          color: $pure-black;
+          font-weight: $font-weight-regular;
+        }
+      }
+    }
+
+    .header__navbar--left {
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  &__topbar {
+    padding: 10px 0;
+    background-color: $very-dark-blue;
+  }
+
+  &__topbar--inner {
+    @include d-flex;
+  }
+
+  &__topbar--left {
+    li {
+      display: inline-block;
+
+      a {
+        gap: 10px;
+        color: $pure-white;
+        margin: 0 15px 0 0;
+        text-decoration: none;
+        transition: all 0.6s ease 0s;
+        @include d-flex;
+        justify-content: flex-start;
+
+        &:hover {
+          color: $mostly-black;
+        }
+
+        i {
+          font-size: 14px;
+        }
+
+        span {
+          font-size: 12px;
+          letter-spacing: 1px;
+          font-weight: $font-weight-extra-light;
+        }
+      }
+    }
+  }
+
+  &__topbar--right {
+    li {
+      display: inline-block;
+
+      a {
+        color: $pure-white;
+        text-decoration: none;
+        margin: 0 0 0 15px;
+
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &__navbar {
+    padding: 7px 0;
+  }
+
+  &__navbar--inner {
+    @include d-flex;
+  }
+
+  &__navbar--left {
+    a {
+      display: block;
+    }
+
+    img {
+      width: 75px;
+      display: block;
+      transition: all 0.6s ease 0s;
+    }
+  }
+
+  &__navbar--right {
+    li {
+      display: inline-block;
+      margin: 0 0 0 30px;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: $pure-white;
+        font-size: 14px;
+        font-weight: $font-weight-extra-light;
+      }
+    }
+  }
+}

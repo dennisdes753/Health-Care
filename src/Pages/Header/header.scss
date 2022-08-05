@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$base-color: #EDDA8E;
+$base-font: 'Roboto', sans-serif;
+$secondary-font: 'Playfair Display', serif;
+
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $base-font;
+}
+
+.playfair-font{
+    font-family: $secondary-font;
+}
+
+p{
+    font-family: $base-font;
+    font-size: 16px;
+    word-break: break-all;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    font-family: $base-font;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.button{
+    width: 100%;
+    background: $base-color;
+    border-radius: 4px;
+    color: #000;
+}
+
+.top-stipe{
+    width: 100%;
+    background: #1B1D21;
+    padding: 10px 0;
+    display: flex;
+    .address{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        .wrap-address{
+            color: #fff;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .hr-line{
+                width: 1px;
+                height: 20px;
+                background: #EDDA8E;
+                margin: 0 15px;
+            }
+            p{
+                display: block;
+                margin-right: 15px;
+                font-family: $base-font;
+                word-break: break-all;
+                padding: 0;
+                margin: 0;
+                font-size: 14px;
+                span{
+                    margin-left: 5px;
+                }
+            }
+            .color-yellow{
+                color: $base-color;
+                font-size: 16px;
+            }
+        }
+        .social-icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                color: #fff;
+                margin: 0 10px;
+            }    
+        }
+    }
+}
+
+.nav-project{
+    width: 100%;
+    display: flex;
+    .header_link {
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li{
+                margin: 0 30px;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    &.active{
+                        color: #87CEFA;
+                        border-bottom: 1px solid #87CEFA;
+                    }
+                }
+            }
+        }  
+    }
+}
+
+
