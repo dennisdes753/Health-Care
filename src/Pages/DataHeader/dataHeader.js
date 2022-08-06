@@ -3,7 +3,7 @@ export const navLink = [
     {path: '/our-care', element: 'Our Care'},
     {path: '/pricing', element: 'Pricing'},
     {path: '/our-communities', element: 'Our Communities'},
-    {path: '/careers', element: 'Career'},
+    {path: '/career', element: 'Career'},
 ]
 
 export const Servicess = [
